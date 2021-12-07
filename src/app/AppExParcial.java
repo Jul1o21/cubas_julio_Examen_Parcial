@@ -10,7 +10,9 @@ import principal.Banco;
 import principal.Cajero;
 import principal.Cliente;
 import principal.Cuenta;
+import principal.Operacion;
 import principal.Tarjeta;
+import principal.TipoOperacion;
 
 /**
  *
@@ -59,6 +61,22 @@ public class AppExParcial {
         Tarjeta tarjetatest;
         tarjetatest = new Tarjeta("888888", "Jesus Andres", 31627141, fechaactual, "El destructor de mundos", cuentatest);
         System.out.println(tarjetatest);
+        
+        
+        
+        System.out.println("\n\nSe creara una operacion como ejemplo:\n\n");
+        
+        TipoOperacion tipotest;
+        tipotest = new TipoOperacion("Tipo generico", 2223);
+        
+        Operacion operaciontest;
+        
+        operaciontest = new Operacion(fechaactual, 1000, tipotest, cuentatest, cajerotest);
+        
+        
+        System.out.println(operaciontest);
+        
+        
     }
     
 }

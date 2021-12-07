@@ -65,7 +65,7 @@ public class Tarjeta {
     
     @Override
     public String toString() {
-        return "Tarjeta{" + "numero=" + numero + ", nombre=" + nombre + ", cvv=" + cvv + ", fechaVenc=" + fechaVenc + ", clave=" + clave + ", cuenta=" + cuenta + '}';
+        return "La Tarjeta es:\n\n" + "numero=" + numero + ", nombre=" + nombre + ", cvv=" + cvv + ", fechaVenc=" + fechaVenc + ", clave=" + clave + "\n\nLa cuenta de la trajerta es:\n\n" + cuenta;
     }
     
     
