@@ -25,6 +25,17 @@ public class Operacion {
         this.cuenta = cuenta;
         this.cajero = cajero;
     }
+    
+    
+    
+    public TipoOperacion getTipoop() {
+        return tipoop;
+    }
+    
+    
+    
+    
+    
 
     @Override
     public String toString() {

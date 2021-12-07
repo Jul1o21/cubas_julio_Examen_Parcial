@@ -27,7 +27,42 @@ public class Tarjeta {
         this.clave = clave;
         this.cuenta = cuenta;
     }
+    public boolean validar(String clave){
+        boolean result = false;
+        
+        
+        return result;
+    }
+    
 
+    public boolean depositar(Cuenta cuenta, float monto ){
+        boolean result = false;
+        
+        
+        return result;
+    }
+    public boolean retirar(Cuenta cuenta, float monto ){
+        boolean result = false;
+        
+        
+        return result;
+    }
+    
+    public boolean transferir(Cuenta cuenta, float monto ){
+        boolean result = false;
+        
+        
+        return result;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @Override
     public String toString() {
         return "Tarjeta{" + "numero=" + numero + ", nombre=" + nombre + ", cvv=" + cvv + ", fechaVenc=" + fechaVenc + ", clave=" + clave + ", cuenta=" + cuenta + '}';

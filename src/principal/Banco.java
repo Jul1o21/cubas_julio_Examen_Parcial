@@ -37,7 +37,27 @@ public class Banco {
   
         
     }
-
+    public boolean registrarCliente(Cliente cliente){
+        boolean result =false;
+        
+        return result;
+    }  
+   /* public Cuenta getCuentasporcliente(Cliente cliente){
+        Cuenta[] cuentas;
+        cuentas = new Cuenta[];
+        
+        return cuentas;
+    }    */
+    
+    
+    public boolean validarTarjeta(String numtarjeta, String dni, String clave){
+        boolean result =false;
+        
+        return result;
+    }  
+    
+    
+    
     
     public void agregarCajero(Cajero cajero){
         

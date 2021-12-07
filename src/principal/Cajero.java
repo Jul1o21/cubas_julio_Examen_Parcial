@@ -25,7 +25,43 @@ public class Cajero {
     public String getDirección() {
         return direccion;
     }
-
+    public boolean depositar(Tarjeta tarjeta, Cuenta cuenta, float monto){
+        boolean result =false;
+        
+        return result;
+    } 
+    public boolean retirar(Tarjeta tarjeta, Cuenta cuenta, float monto){
+        boolean result =false;
+        
+        return result;
+    }  
+    public boolean transferir(Tarjeta tarjeta, Cuenta cuenta, float monto){
+        boolean result =false;
+        
+        return result;
+    }  
+    
+    public boolean validartarjeta(String rucbanco, String numtarjeta, String dni, String clave){
+        boolean result =false;
+        
+        return result;
+    }  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @Override
     public String toString() {
         return "Los datos del cajero son:\n"

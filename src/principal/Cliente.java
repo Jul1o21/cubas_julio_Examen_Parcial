@@ -32,16 +32,42 @@ public class Cliente {
         return direccion;
     }
 
+    
+    public boolean depositar(Cuenta cuenta, float monto){
+        boolean result = false;
+        
+        return result;
+    }
+     public boolean retirar(Cuenta cuenta, float monto){
+        boolean result = false;
+        
+        return result;
+    }
+    
+    
+      public boolean transferir(Cuenta cuenta, float monto){
+        boolean result = false;
+        
+        return result;
+    }
+    
+    
+  /*     public boolean consultarMovimientos(Cuenta cuenta){
+        boolean result = false;
+        
+        return result;
+    }*/
+    
+    
+    
+    
+    
+    
     @Override
     public String toString() {
         return "Cliente(" + "dni=" + dni + ", nombre=" + nombre + ", direccion=" + direccion + ')';
     }
     
-    public boolean depositar(Cuenta cuenta, float monto){
-    boolean result = false;
     
-    return result;
-      
-}
     
 }
