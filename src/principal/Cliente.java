@@ -39,7 +39,7 @@ public class Cliente {
     
     public boolean depositar(Cuenta cuenta, float monto){
     boolean result = false;
-            
+    
     return result;
       
 }

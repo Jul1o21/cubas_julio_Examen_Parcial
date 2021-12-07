@@ -10,5 +10,20 @@ package principal;
  * @author cubas
  */
 public class TipoOperacion {
+    private String nombre;
+    private int codigo;
+
+    public TipoOperacion(String nombre, int codigo) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+    }
+
     
+    
+    @Override
+    public String toString() {
+        return "TipoOperacion{" + "nombre=" + nombre + ", codigo=" + codigo + '}';
+    }
+    
+           
 }

@@ -10,5 +10,17 @@ package principal;
  * @author cubas
  */
 public class Cajero {
+    private String nombre;
+    private String dirección;
+
+    public Cajero(String nombre, String dirección) {
+        this.nombre = nombre;
+        this.dirección = dirección;
+    }
+
+
+    
+    
+    
     
 }

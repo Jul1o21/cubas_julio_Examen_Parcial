@@ -10,5 +10,11 @@ package principal;
  * @author cubas
  */
 public class Banco {
+    private String ruc;
+    private String nombre;
+    private String direccion;
+    private Cuenta[] cuentas;
+    private Cajero[] cajeros;
+    
     
 }
