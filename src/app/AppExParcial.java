@@ -10,6 +10,7 @@ import principal.Banco;
 import principal.Cajero;
 import principal.Cliente;
 import principal.Cuenta;
+import principal.Tarjeta;
 
 /**
  *
@@ -51,6 +52,14 @@ public class AppExParcial {
         
         System.out.println(banco);        
         
+        
+        
+        
+        System.out.println("\n\nSe creara una tarjeta como ejemplo:\n\n");
+        Tarjeta tarjetatest;
+        tarjetatest = new Tarjeta("888888", "Jesus Andres", 31627141, fechaactual, "El destructor de mundos", cuentatest);
+        System.out.println(tarjetatest);
     }
     
 }
+
