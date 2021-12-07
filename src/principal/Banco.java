@@ -81,7 +81,7 @@ public class Banco {
          }
          this.cuentas= nuevascuentas;
        
-         System.out.println("\nSe agrego la ceunta con exito");
+         System.out.println("\nSe agrego la cuenta con exito");
     }
     
     
@@ -95,9 +95,12 @@ public class Banco {
         for(int i =0 ; i<this.cajeros.length;i++){
             
              cajeroz = cajeroz + this.cajeros[i].toString()+"\n\n-------------------------------\n\n\t";
+             
+             System.out.println("El vecto delcajero mide: \n\n" + this.cajeros.length);
          }
         for(int i =0 ; i<this.cuentas.length;i++){
              cuentaz = cuentaz + this.cuentas[i].toString()+"\n\n-------------------------------\n\n\t";
+             System.out.println("El vecto de cuentas mide: \n\n" + this.cuentas.length);
          }
         return  "\n--------------------------------------------------------------LOS DATOS DE ESTE BANCO SON--------------------------------------------------------------\n\n"+"ruc=" + ruc + 
                 "\tnombre: " + nombre + 

@@ -39,7 +39,7 @@ public class Operacion {
 
     @Override
     public String toString() {
-        return "Operacion{" + "fecha=" + fecha + ", monto=" + monto + ", tipoop=" + tipoop + ", cuenta=" + cuenta + ", cajero=" + cajero + '}';
+        return "\n--------------------------------------------------------------LOS DATOS DE ESTA OPERACION SON--------------------------------------------------------------\n\n" + "Operacion(fecha=" + fecha + ", monto=" + monto + ", tipoop=" + tipoop + ")\n\nla cuenta de esta operacion: " + cuenta + "\n\n el cajero de esta operacion: \n" + cajero;
     }
     
     

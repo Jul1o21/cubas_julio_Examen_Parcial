@@ -16,6 +16,7 @@ public class Cuenta {
     private Date fechaApertura;
     private float saldo;
     private Cliente cliente;
+    private Tarjeta tarjeta;
 
     public Cuenta(String numero, Date fechaApertura, float saldo, Cliente cliente) {
         this.numero = numero;
@@ -23,7 +24,13 @@ public class Cuenta {
         this.saldo = saldo;
         this.cliente = cliente;
     }
-
+    public Cuenta(String numero, Date fechaApertura, float saldo, Cliente cliente, Tarjeta tarjeta) {
+        this.numero = numero;
+        this.fechaApertura = fechaApertura;
+        this.saldo = saldo;
+        this.cliente = cliente;
+        this.tarjeta = tarjeta;
+    }
     public String getNumero() {
         return numero;
     }
@@ -72,10 +79,11 @@ public class Cuenta {
     
     @Override
     public String toString() {
-        return "\nLos datos de esta cuenta son:\n" +
+        return "\nCuenta:\n" +
                 "\t\nnumero: " + numero + 
                 "\t\nfechaApertura: " + fechaApertura + 
                 "\t\nsaldo: " + saldo + 
+                "\tLa tarjeta de la cuenta: " + tarjeta + 
                 "\t\ncliente: " + cliente+"\n\n";
     }
     

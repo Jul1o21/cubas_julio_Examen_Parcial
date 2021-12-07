@@ -64,7 +64,7 @@ public class Cajero {
     
     @Override
     public String toString() {
-        return "Los datos del cajero son:\n"
+        return "Cajero:\n"
                 + " Cajero(" + "nombre:" + nombre + ", direccion:" + direccion + ')';
     }
 
