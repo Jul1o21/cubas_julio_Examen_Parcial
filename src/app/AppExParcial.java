@@ -5,9 +5,11 @@
  */
 package app;
 
+import java.util.Date;
 import principal.Banco;
 import principal.Cajero;
 import principal.Cliente;
+import principal.Cuenta;
 
 /**
  *
@@ -21,19 +23,37 @@ public class AppExParcial {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        System.out.println("Se creara un banco como ejemplo:\n\n");
+        
         
         Banco banco;
-        banco = new Banco("comas", "pichincha", "Calle 80", new Cliente("2777", "Julio", "Calle 23 nro 110"));
+        banco = new Banco("Comas", "pichincha", "Calle 110");
+        
+        //Agregamos Cuentas y Cajeros al banco:
+        
+        Cajero cajerotest;
+        cajerotest = new Cajero("Numero 66", "Av Las Palmeras los olivos 15030");
         
         
+        Date fechaactual = new Date();
+        
+        Cuenta cuentatest;
+        
+        Cliente clientetest;
+        
+        clientetest = new Cliente("88888", "Jesu Andre ", "Los Olivos Av Las palmeras");
+     
+        
+        cuentatest = new Cuenta("322", fechaactual,4000,clientetest);
+        banco.agregarCajero(cajerotest);
         
         
-    /*    banco.agregarCajero(new Cajero("A001", "Calle 50"));
+   /*     banco.agregarCajero(new Cajero("A001", "Calle 50"));
         banco.agregarCajero(new Cajero("interbank", "Calle 200"));
         
         Cajero cajer2 = new Cajero("TEst1", "Testdirec");
-        System.out.println(cajer2);*/
-                
+        System.out.println(cajer2);
+                */
         System.out.println(banco);        
         
     }
