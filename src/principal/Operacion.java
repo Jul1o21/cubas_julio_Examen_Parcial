@@ -16,21 +16,24 @@ public class Operacion {
     private float monto;
     private TipoOperacion tipoop;
     private Cuenta cuenta;
+    private Cajero cajero;
 
-    public Operacion(Date fecha, float monto, TipoOperacion tipoop, Cuenta cuenta) {
+    public Operacion(Date fecha, float monto, TipoOperacion tipoop, Cuenta cuenta, Cajero cajero) {
         this.fecha = fecha;
         this.monto = monto;
         this.tipoop = tipoop;
         this.cuenta = cuenta;
+        this.cajero = cajero;
     }
 
     @Override
     public String toString() {
-        return "Operacion{" + "fecha=" + fecha + ", monto=" + monto + ", tipoop=" + tipoop + ", cuenta=" + cuenta + '}';
+        return "Operacion{" + "fecha=" + fecha + ", monto=" + monto + ", tipoop=" + tipoop + ", cuenta=" + cuenta + ", cajero=" + cajero + '}';
     }
     
     
     
+
     
     
 }

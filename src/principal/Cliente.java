@@ -34,7 +34,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" + "dni=" + dni + ", nombre=" + nombre + ", direccion=" + direccion + '}';
+        return "Cliente(" + "dni=" + dni + ", nombre=" + nombre + ", direccion=" + direccion + ')';
     }
     
     public boolean depositar(Cuenta cuenta, float monto){

@@ -11,11 +11,25 @@ package principal;
  */
 public class Cajero {
     private String nombre;
-    private String dirección;
+    private String direccion;
 
     public Cajero(String nombre, String dirección) {
         this.nombre = nombre;
-        this.dirección = dirección;
+        this.direccion = dirección;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public String getDirección() {
+        return direccion;
+    }
+
+    @Override
+    public String toString() {
+        return "Los datos del cajero son:\n"
+                + " Cajero(" + "nombre:" + nombre + ", direccion:" + direccion + ')';
     }
 
 

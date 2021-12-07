@@ -24,9 +24,59 @@ public class Cuenta {
         this.cliente = cliente;
     }
 
+    public String getNumero() {
+        return numero;
+    }
+
+    public Date getFechaApertura() {
+        return fechaApertura;
+    }
+
+    public float getSaldo() {
+        return saldo;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    
+    public boolean depositar(float monto){
+        boolean result = false;
+        
+        
+        return result;
+    }
+    public boolean retirar(float monto){
+        boolean result = false;
+        
+        
+        return result;
+    }
+    public boolean transferir(float monto){
+        boolean result = false;
+        
+        
+        return result;
+    }
+    public float consultarsaldo(){
+        
+        
+        
+        return this.saldo;
+    }
+  
+    
+    
+    
+    
     @Override
     public String toString() {
-        return "Cuenta{" + "numero=" + numero + ", fechaApertura=" + fechaApertura + ", saldo=" + saldo + ", cliente=" + cliente + '}';
+        return "\nLos datos de la ceunta son:\n" +
+                "\t\nnumero: " + numero + 
+                "\t\nfechaApertura: " + fechaApertura + 
+                "\t\nsaldo: " + saldo + 
+                "\t\ncliente: " + cliente+"\n\n";
     }
     
 
