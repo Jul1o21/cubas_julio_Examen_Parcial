@@ -26,11 +26,13 @@ public class AppExParcial {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        System.out.println("Se creara un banco como ejemplo:\n\n");
+        
+        
+        System.out.println("Clases con tarjeta:  \n\n\n\n");
         
         
         Banco banco;
-        banco = new Banco("20100130204", "pichincha", "Calle 110");
+        banco = new Banco("20100130204", "pichincha", "San borja Calle 110");
         
         //Agregamos Cuentas y Cajeros al banco:
         
@@ -44,38 +46,36 @@ public class AppExParcial {
         
         Cliente clientetest;
         
-        clientetest = new Cliente("88888", "Jesu Andres Lujan Carrion ", "Los Olivos Av Las palmeras");
+        clientetest = new Cliente("88888", "Jesus Andres Lujan Carrion ", "Los Olivos Av Las palmeras");
      
         
         cuentatest = new Cuenta("322", fechaactual,4000,clientetest);
         banco.agregarCajero(cajerotest);
         banco.agregarCuenta(cuentatest);
-        
-        
         System.out.println(banco);        
-        
-        
-        
-        
+  
         System.out.println("\n\nSe creara una tarjeta como ejemplo:\n\n");
         Tarjeta tarjetatest;
-        tarjetatest = new Tarjeta("888888", "Jesus Andres", 31627141, fechaactual, "El destructor de mundos", cuentatest);
+        tarjetatest = new Tarjeta("888888", "Jesus Andres", 31627141, fechaactual, "987654321", cuentatest);
         System.out.println(tarjetatest);
         
-        
-        
+
         System.out.println("\n\nSe creara una operacion como ejemplo:\n\n");
         
         TipoOperacion tipotest;
         tipotest = new TipoOperacion("Tipo generico", 2223);
         
         Operacion operaciontest;
-        
-        operaciontest = new Operacion(fechaactual, 1000, tipotest, cuentatest, cajerotest);
-        
+        operaciontest = new Operacion(fechaactual, 1000, tipotest, cuentatest, cajerotest); 
         
         System.out.println(operaciontest);
         
+        
+        
+        
+        
+       
+     
         
     }
     
