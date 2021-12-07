@@ -99,11 +99,11 @@ public class Banco {
         for(int i =0 ; i<this.cuentas.length;i++){
              cuentaz = cuentaz + this.cuentas[i].toString()+"\n\n-------------------------------\n\n\t";
          }
-        return  "\nLOS DATOS DE ESTE BANCO SON: \n"+"ruc=" + ruc + 
+        return  "\n--------------------------------------------------------------LOS DATOS DE ESTE BANCO SON--------------------------------------------------------------\n\n"+"ruc=" + ruc + 
                 "\tnombre: " + nombre + 
                 "\tdireccion: " + direccion + 
                 "\n\nLas cuentas son:\n" + cuentaz+
-                "\n\nLos cajeros son:\n" + cajeroz;
+                "\nLos cajeros son:\n" + cajeroz;
                 
     }
     

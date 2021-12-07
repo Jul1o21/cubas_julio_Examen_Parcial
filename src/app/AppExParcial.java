@@ -27,7 +27,7 @@ public class AppExParcial {
         
         
         Banco banco;
-        banco = new Banco("Comas", "pichincha", "Calle 110");
+        banco = new Banco("20100130204", "pichincha", "Calle 110");
         
         //Agregamos Cuentas y Cajeros al banco:
         
