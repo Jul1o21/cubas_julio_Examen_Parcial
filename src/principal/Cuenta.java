@@ -72,7 +72,7 @@ public class Cuenta {
     
     @Override
     public String toString() {
-        return "\nLos datos de la ceunta son:\n" +
+        return "\nLos datos de esta cuenta son:\n" +
                 "\t\nnumero: " + numero + 
                 "\t\nfechaApertura: " + fechaApertura + 
                 "\t\nsaldo: " + saldo + 

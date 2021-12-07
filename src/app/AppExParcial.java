@@ -27,7 +27,7 @@ public class AppExParcial {
         
         
         Banco banco;
-        banco = new Banco("Comas", "pichincha", "Calle 110", new Cliente("2777", "Julio", "Calle 23 nro 110"));
+        banco = new Banco("Comas", "pichincha", "Calle 110");
         
         //Agregamos Cuentas y Cajeros al banco:
         
@@ -41,19 +41,14 @@ public class AppExParcial {
         
         Cliente clientetest;
         
-        clientetest = new Cliente("88888", "Jesu Andre ", "Los Olivos Av Las palmeras");
+        clientetest = new Cliente("88888", "Jesu Andres Lujan Carrion ", "Los Olivos Av Las palmeras");
      
         
-        cuentatest = new Cuenta("322", fechaactual, 0,clientetest);
+        cuentatest = new Cuenta("322", fechaactual,4000,clientetest);
         banco.agregarCajero(cajerotest);
-   //     banco.agregarCuenta(cuentatest);
+        banco.agregarCuenta(cuentatest);
         
-   /*     banco.agregarCajero(new Cajero("A001", "Calle 50"));
-        banco.agregarCajero(new Cajero("interbank", "Calle 200"));
         
-        Cajero cajer2 = new Cajero("TEst1", "Testdirec");
-        System.out.println(cajer2);
-                */
         System.out.println(banco);        
         
     }
